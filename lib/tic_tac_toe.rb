@@ -67,6 +67,6 @@ class TicTacToe
   end
   
   def full?
-    @board.none?(" " || "")
+    @board.none?(" " || "" || nil)
   end
 end
