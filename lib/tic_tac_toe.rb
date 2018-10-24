@@ -59,7 +59,10 @@ class TicTacToe
   end
   
   def won?
-    
+    WIN_COMBINATIONS.each do |win_combination|
+      win_combo = [@board[win_combination[0]], @board[win_combination[1]], @board[win_combination[2]]]
+      win_combo.find {|win| win == "X"} || win_combo.find {|win| win == "O"}
+    end
   end
   
 end
