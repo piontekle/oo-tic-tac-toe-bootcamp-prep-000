@@ -31,8 +31,7 @@ class TicTacToe
   end
   
   def position_taken?(index)
-    if @board.any? != " " || ""
-    return false
+    @board[index] != " " && @board[index] != ""
   end
   
 end
